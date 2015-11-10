@@ -1,12 +1,13 @@
 #include "jeju.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-
-int main()
+//option(opt)
+int main(int opt)
 {
-	int opt;
-	printf("Please type name of option :");
-	scanf("%d",&opt);
-	//now apply with adb
+	
+	//run adb
+      execve("./adb"," shell"," mkdir"," /jeju/",opt);
+	  
 	return 0;
 }
